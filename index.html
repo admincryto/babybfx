@@ -3,80 +3,76 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>BabyBFX • Token Presale</title>
+  <title>BabyBFX • Official Website</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{--bg:#071029;--card:#0e1b2a;--accent:#ffb600;--muted:#9fb0c8;--glass:rgba(255,255,255,0.03)}
     *{box-sizing:border-box;font-family:Inter,system-ui,Arial,sans-serif}
-    body{margin:0;background:linear-gradient(180deg,#071029 0%, #061726 100%);color:#e6f2ff;-webkit-font-smoothing:antialiased}
+    body{margin:0;background:linear-gradient(180deg,#071029 0%, #061726 100%);color:#e6f2ff}
     .container{max-width:1000px;margin:32px auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#ffb600,#f07a00);display:flex;align-items:center;justify-content:center;color:#071029;font-weight:800;font-size:18px;box-shadow:0 6px 18px rgba(0,0,0,0.45)}
+    header{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#ffb600,#f07a00);
+      display:flex;align-items:center;justify-content:center;color:#071029;font-weight:800;font-size:18px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.45)}
     h1{margin:0;font-size:28px}
     p.lead{color:var(--muted);margin:6px 0 0}
-    .hero{display:grid;grid-template-columns:1fr;gap:20px;margin-top:24px}
-    .card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 8px 30px rgba(2,8,23,0.6);border:1px solid rgba(255,255,255,0.03)}
-    .features{display:flex;gap:12px;margin-top:16px}
-    .feature{flex:1;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:12px;border-radius:10px}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
-    th,td{padding:10px;text-align:left;border-bottom:1px dashed rgba(255,255,255,0.03)}
-    th{color:var(--muted);font-weight:600}
-    footer{margin-top:28px;padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);display:flex;justify-content:space-between;align-items:center}
+
+    .card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 8px 30px rgba(2,8,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);margin-top:24px}
+
+    .features{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .feature{flex:1;min-width:200px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);
+      padding:12px;border-radius:10px}
+
+    .price{font-size:22px;font-weight:700;margin-top:6px}
+
+    footer{margin-top:28px;padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);
+      text-align:center}
+    .btn{display:inline-block;margin:6px;padding:12px 18px;border-radius:10px;font-weight:600;text-decoration:none}
+    .btn.telegram{background:#2aabee;color:#fff}
+    .btn.twitter{background:#1da1f2;color:#fff}
     .small{font-size:13px;color:var(--muted)}
-    @media (max-width:880px){.brand h1{font-size:20px}.container{padding:16px}}
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="brand">
-        <div class="logo">BB</div>
-        <div>
-          <h1>BabyBFX <span style="color:var(--accent);font-weight:700">$BBFX</span></h1>
-          <p class="lead">Token tiện ích – Tham gia sớm, nhận thưởng staking & airdrop.</p>
-        </div>
+      <div class="logo">BB</div>
+      <div>
+        <h1>BabyBFX <span style="color:var(--accent);font-weight:700">$BBFX</span></h1>
+        <p class="lead">Token tiện ích – Tham gia sớm, nhận thưởng staking & airdrop.</p>
       </div>
-      <nav>
-        <a class="btn secondary" href="#tokenomics">Tokenomics</a>
-      </nav>
     </header>
 
-    <main class="hero">
-      <section class="card">
-        <h2 style="margin:0 0 8px">Giới thiệu</h2>
-        <p class="small" style="margin:0 0 12px;color:var(--muted)">
-          BabyBFX (BBFX) là token tiện ích được thiết kế để hỗ trợ hệ sinh thái DeFi, staking & rewards trên nền tảng BFX. 
-          Mục tiêu: tạo cầu nối giữa người dùng mới và nền tảng giao dịch on-chain.
-        </p>
+    <section class="card">
+      <h2>Giới thiệu</h2>
+      <p class="small">BabyBFX (BBFX) là token tiện ích được thiết kế để hỗ trợ hệ sinh thái DeFi, staking & rewards trên nền tảng BFX. 
+      Mục tiêu: tạo cầu nối giữa người dùng mới và nền tảng giao dịch on-chain.</p>
 
-        <div class="features">
-          <div class="feature">
-            <strong>✔ Liquidity</strong>
-            <div class="small">LP sẽ được khoá để đảm bảo an toàn.</div>
-          </div>
-          <div class="feature">
-            <strong>✔ Staking & Rewards</strong>
-            <div class="small">Người nắm BBFX có thể staking để nhận phần thưởng định kỳ.</div>
-          </div>
+      <div class="features">
+        <div class="feature">
+          <strong>✔ Liquidity</strong>
+          <div class="small">LP sẽ được khoá để đảm bảo an toàn.</div>
         </div>
+        <div class="feature">
+          <strong>✔ Staking & Rewards</strong>
+          <div class="small">Người nắm BBFX có thể staking để nhận phần thưởng định kỳ.</div>
+        </div>
+      </div>
 
-        <div class="grid">
-          <div class="card" style="background:transparent;padding:12px">
-            <h3 style="margin:0">Tổng cung</h3>
-            <div class="price">1,000,000,000 BBFX</div>
-          </div>
-          <div class="card" style="background:transparent;padding:12px">
-            <h3 style="margin:0">Blockchain</h3>
-            <div class="price">BNB Chain (BEP-20)</div>
-          </div>
-        </div>
-      </section>
-    </main>
+      <h3 style="margin-top:20px">Tokenomics</h3>
+      <table style="width:100%;margin-top:8px">
+        <tr><th>Tổng cung</th><td class="price">1,000,000,000 BBFX</td></tr>
+        <tr><th>Blockchain</th><td>BNB Chain (BEP-20)</td></tr>
+      </table>
+    </section>
 
     <footer>
-      <span class="small">© 2025 BabyBFX. All rights reserved.</span>
-      <span class="small">Follow us: Twitter • Telegram</span>
+      <div style="margin-bottom:12px">
+        <a class="btn telegram" href="https://t.me/babybfx" target="_blank">Join Telegram</a>
+        <a class="btn twitter" href="https://twitter.com/babybfx" target="_blank">Follow Twitter</a>
+      </div>
+      <div class="small">© 2025 BabyBFX. All rights reserved.</div>
     </footer>
   </div>
 </body>
